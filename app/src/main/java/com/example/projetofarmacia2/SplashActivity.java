@@ -35,8 +35,8 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-        sub = (ImageView) findViewById(R.id.bemvindo);
+        /*sub = (ImageView) findViewById(R.id.bemvindo);
         frombottom = AnimationUtils.loadAnimation(this,R.anim.frombotton);
-        sub.setAnimation(frombottom);
+        sub.setAnimation(frombottom);*/
     }
 }

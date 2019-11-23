@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:hint="Buscar"
+            android:hint="Buscar (nome, principio ativo) "
             android:drawableLeft="@drawable/ic_search_"
             android:drawablePadding="16dp"
             android:layout_marginRight="20dp"

@@ -19,6 +19,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.projetofarmacia2.R;
 import com.example.projetofarmacia2.adapters.MedicamentoBaratoListAdapter;
 import com.example.projetofarmacia2.adapters.MedicamentoListAdapter;
+import com.example.projetofarmacia2.model.Endereco;
 import com.example.projetofarmacia2.model.Farmacia;
 import com.example.projetofarmacia2.model.Imagem;
 import com.example.projetofarmacia2.model.Medicamento;
@@ -85,6 +86,14 @@ public class Busca_medicametos_mais_baratos {
                         //objetoMedicamento.getFarmacia().setNome(jsFarmacia.getString("nome"));
                         farmacia.setNome(jsFarmacia.getString("nome"));
                         objetoMedicamento.setFarmacia(farmacia);
+
+                        //Pegar endereço
+                        JSONObject jsEndereco = jsFarmacia.getJSONObject("endereco");
+                        Endereco endereco = new Endereco();
+                        endereco.setLatitude(jsEndereco.getString("latitude"));
+                        endereco.setLongitude(jsEndereco.getString("longitude"));
+                        objetoMedicamento.getFarmacia().setEndereco(endereco);
+
 
 
 

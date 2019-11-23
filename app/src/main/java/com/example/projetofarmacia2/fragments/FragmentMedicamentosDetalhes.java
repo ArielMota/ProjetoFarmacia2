@@ -115,6 +115,9 @@ public class FragmentMedicamentosDetalhes extends Fragment {
             @Override
             public void onClick(View v) {
 
+                System.out.println("Aqui  "+ finalMedicamento.getFarmacia().getEndereco().getLatitude());
+
+
                 double  latitude = Double.valueOf(finalMedicamento.getFarmacia().getEndereco().getLatitude());
                 double  longitude = Double.valueOf(finalMedicamento.getFarmacia().getEndereco().getLongitude());
 

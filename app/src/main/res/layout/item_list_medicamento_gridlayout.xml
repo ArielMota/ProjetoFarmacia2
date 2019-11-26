@@ -3,8 +3,8 @@
 <androidx.cardview.widget.CardView
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="190dp"
-    android:layout_height="232dp"
+    android:layout_width="170dp"
+    android:layout_height="230dp"
     android:id="@+id/produto_item_card"
     android:layout_margin="2dp"
 
@@ -120,7 +120,7 @@
                 </LinearLayout>
 
             </TableRow>
-          <TableRow>
+            <TableRow>
 
                 <LinearLayout
                     android:layout_weight="1"

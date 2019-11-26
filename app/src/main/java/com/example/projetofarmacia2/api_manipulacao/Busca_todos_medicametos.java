@@ -54,6 +54,8 @@ public class Busca_todos_medicametos {
             public void onResponse(String response) {
                 Log.i("LOG_RESPONSE", response);
 
+
+
                 List<Medicamento> medicamentos = new ArrayList<Medicamento>();
 
 

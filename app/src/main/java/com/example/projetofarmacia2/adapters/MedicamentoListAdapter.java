@@ -198,8 +198,12 @@ public class MedicamentoListAdapter extends RecyclerView.Adapter<MedicamentoList
         TextView nome_medicamento =  listViewHolder.nomeMedicamento;
         nome_medicamento.setText(String.valueOf(medicamento.getNome()));
 
+
+
         TextView preco_medicamento =  listViewHolder.precoMedicamento;
-        preco_medicamento.setText("$ "+medicamento.getPreco());
+        String preco = String.valueOf(medicamento.getPreco());
+        preco = preco.replace(".",",");//converter ponto em virgula
+        preco_medicamento.setText("$ "+preco);
 
         TextView principio_ativo_medicamento =  listViewHolder.principioAtivoMedicamento;
         principio_ativo_medicamento.setText(String.valueOf(medicamento.getPrincipioAtivo()));
